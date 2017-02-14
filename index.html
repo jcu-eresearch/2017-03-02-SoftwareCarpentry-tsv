@@ -36,35 +36,27 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   are not using Eventbrite, or leave it in, since it will not be
   displayed if the 'eventbrite' field in the header is not set.
 -->
-<!--
 {% if page.eventbrite %}
--->
-
-<iframe>
-
-  src="https://alumni.jcu.edu.au/EResearchTraining"
+<iframe
+  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
   width="100%"
   height="248px"
-  scrolling="auto"
+  scrolling="auto">
 </iframe>
-
-<!--
 {% endif %}
--->
+
 <p>
   <img style="height: 150px; padding-top: 5px; padding-right: 10px;" src="https://jcu-eresearch.github.io/2016-09-27-SoftwareCarpentry-tsv/assets/img/jcu_shield.png" alt="James Cook University">
-<!---  # Right hand side of logo is chopped off no matter the size.  I can't yet render .svg graphics.  Also can't get a .png file to show on screen? Also can't find location of the 'jcu_shield.png' in assests.  
-  <img style="height: 150px; padding-top: 5px; padding-right: 10px;" src="https://jcu-eresearch.github.io/2016-09-27-SoftwareCarpentry-tsv/assets/img/jcu_shield.png" alt="eResearch">
---->  
+  <img style="height: 150px; padding-top: 5px; padding-right: 10px;" src="https://jcu-eresearch.github.io/2016-09-27-SoftwareCarpentry-tsv/assets/img/eresearch-logo.svg" alt="eResearch">
 </p>
 
-<!---
+<!--
 <h4>This is the workshop template.  Use it to create your own website.
 Delete these lines and please fill in 
 <a href="{{site.amy_site}}/submit">this self-organized workshop form</a>
 and the administrator will contact you if we need any extra information.</h4>
---->
+-->
 
 <h2 id="general">General Information</h2>
 
@@ -93,7 +85,7 @@ and the administrator will contact you if we need any extra information.</h4>
     "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
   </em>
 </p>
-<!--<p><b>Registration:</b> <a>https://alumni.jcu.edu.au/EResearchTraining</a></p> -->
+<p><b>Registration:</b> <a href="https://alumni.jcu.edu.au/EResearchTraining">https://alumni.jcu.edu.au/EResearchTraining</a></p>
 
 <!--
   AUDIENCE
