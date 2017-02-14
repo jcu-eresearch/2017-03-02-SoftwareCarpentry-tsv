@@ -3,16 +3,15 @@ layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
 carpentry: "swc"    # what kind of Carpentry (must be either "dc" or "swc")
 venue: "James Cook University, Townsville"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Room ???, Building ???, James Cook University, Townsville, QLD, Austalia."      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address: "Townsville Campus -- all day March 2nd & 3rd, Room To Be Announced"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "AU"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "-19.329383, 146.759118"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "02-03 March, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9:00 - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humandate: "Introducing Unix Shell, Git & R"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "March 2nd & 3rd"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2017-03-02      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2017-03-03        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Jay van Schyndel"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Collin Storlie"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Jay van Schyndel","Daniel Baird","Collin Storlie"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 contact: ["jay.vanschyndel@jcu.edu.au"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 etherpad: http://pad.software-carpentry.org/sc-townsville            # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -37,25 +36,35 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   are not using Eventbrite, or leave it in, since it will not be
   displayed if the 'eventbrite' field in the header is not set.
 -->
+<!--
 {% if page.eventbrite %}
+-->
+<!---
 <iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+--->
+  src="http://alumni.jcu.edu.au/EResearchTraining"
   frameborder="0"
   width="100%"
   height="248px"
-  scrolling="auto">
+  scrolling="auto"<!--->
 </iframe>
+--->
+<!--
 {% endif %}
-
+-->
 <p>
   <img style="height: 150px; padding-top: 5px; padding-right: 10px;" src="https://jcu-eresearch.github.io/2016-09-27-SoftwareCarpentry-tsv/assets/img/jcu_shield.png" alt="James Cook University">
-  <img style="height: 150px; padding-top: 5px; padding-right: 10px;" src="https://jcu-eresearch.github.io/2016-09-27-SoftwareCarpentry-tsv/assets/img/eresearch-logo.svg" alt="eResearch">
+<!---  # Right hand side of logo is chopped off no matter the size.  I can't yet render .svg graphics.  Also can't get a .png file to show on screen? Also can't find location of the 'jcu_shield.png' in assests.  
+  <img style="height: 150px; padding-top: 5px; padding-right: 10px;" src="https://jcu-eresearch.github.io/2016-09-27-SoftwareCarpentry-tsv/assets/img/jcu_shield.png" alt="eResearch">
+--->  
 </p>
 
+<!---
 <h4>This is the workshop template.  Use it to create your own website.
 Delete these lines and please fill in 
 <a href="{{site.amy_site}}/submit">this self-organized workshop form</a>
 and the administrator will contact you if we need any extra information.</h4>
+--->
 
 <h2 id="general">General Information</h2>
 
@@ -66,13 +75,14 @@ and the administrator will contact you if we need any extra information.</h4>
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>
-  aims to help researchers get their work done
-  in less time and with less pain
+  Digital literacy is critical for generating impactful and reproducible research.
+  The JCU eResearch Centre encourages post-graduate students and researchers to expand their capacity
+  with training like <a href="{{site.swc_site}}">Software Carpentry</a>
+  which aims to help researchers get their work done
   by teaching them basic research computing skills.
-  This hands-on workshop will cover basic concepts and tools,
-  including program design, version control, data management,
-  and task automation.
+  This hands-on 2-day workshop will introduce the Unix Shell -- which provides access to powerful tools for data analysis and manipulation.
+  We'll also get a taste for Git -- a tool for managing your data with 'versioning' and increasing your power to collaborate.
+  And last but not least, we'll dip our toes in R -- gaining access to a flexible environment for data manipulation, visualisation and more!
   Participants will be encouraged to help one another
   and to apply what they have learned to their own research problems.
 </p>
@@ -83,6 +93,7 @@ and the administrator will contact you if we need any extra information.</h4>
     "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
   </em>
 </p>
+<p><b>Registration:</b> <a>http://alumni.jcu.edu.au/EResearchTraining</a></p>
 
 <!--
   AUDIENCE
